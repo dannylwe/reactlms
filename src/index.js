@@ -3,6 +3,7 @@ import ReactDOM from "../node_modules/react-dom";
 import App from "./components/App/App";
 import Heading from "./components/Heading/Heading";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Error from './components/Custom404/Error';
 
 const Routing = (
   <>
