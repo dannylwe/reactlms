@@ -1,4 +1,4 @@
-const webpack = require('./node_modules/webpack/lib/webpack');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -8,7 +8,25 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
-      }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.less$/,
+        loaders: [
+          'style-loader', 'css-loader', 'less-loader',
+        ],
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader?classPrefix',
+      },
     ]
   },
   resolve: {

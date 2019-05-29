@@ -1,5 +1,5 @@
-import React from "../node_modules/react";
-import ReactDOM from "../node_modules/react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 import App from "./components/App/App";
 import Heading from "./components/Heading/Heading";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";

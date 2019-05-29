@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Error page should render without failing 1`] = `
-<div>
+<div
+  className="error-heading"
+>
   <h3>
     OOPS! That URL does not exist
   </h3>
