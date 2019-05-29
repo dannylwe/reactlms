@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const webpack = require('./node_modules/webpack/lib/webpack');
 
 module.exports = {
   entry: './src/index.js',

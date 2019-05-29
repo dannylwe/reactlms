@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "test": "echo \"No test specified\" && exit 0"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development --open --hot",
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
