@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error page should render without failing 1`] = `
+<div>
+  <h3>
+    OOPS! That URL does not exist
+  </h3>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Go back to home
+  </a>
+</div>
+`;
