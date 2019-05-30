@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should render without failing 1`] = `
+Array [
+  <div
+    className="login-title"
+  >
+    <h1>
+      Welcome to SendIt
+    </h1>
+  </div>,
+  <div
+    className="form-login"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group center-form"
+      >
+        <label
+          for="emailInput"
+        >
+          Username
+        </label>
+        <input
+          aria-describedby="emailHelp"
+          className="form-control"
+          id="emailInput"
+          name="username"
+          onChange={[Function]}
+          placeholder="Enter username"
+          type="text"
+        />
+        <div
+          className="password-input"
+        >
+          <label
+            for="passwordInput"
+          >
+            Password
+          </label>
+          <input
+            className="form-control"
+            id="passwordInput"
+            name="password"
+            onChange={[Function]}
+            placeholder="Password..."
+            type="password"
+          />
+        </div>
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        Login
+      </button>
+    </form>
+  </div>,
+]
+`;
