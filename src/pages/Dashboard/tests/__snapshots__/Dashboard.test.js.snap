@@ -2,11 +2,39 @@
 
 exports[`Dashboard should render without failing 1`] = `
 Array [
-  <h1>
-    user dashboard
-  </h1>,
-  <p>
-    under construction
-  </p>,
+  <nav
+    class="navbar navbar-dark bg-dark"
+  >
+    <a
+      class="navbar-brand"
+      href="/dashboard"
+    >
+      Home
+    </a>
+    <a
+      class="navbar-brand"
+      href="/login"
+    >
+      Logout
+    </a>
+  </nav>,
+  <br />,
+  <table>
+    <tr>
+      <th>
+        Destination
+      </th>
+      <th>
+        Order Nickname
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+        Pickup Location
+      </th>
+    </tr>
+    loading......
+  </table>,
 ]
 `;
