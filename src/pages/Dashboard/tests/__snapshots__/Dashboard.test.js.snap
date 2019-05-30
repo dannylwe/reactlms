@@ -3,16 +3,16 @@
 exports[`Dashboard should render without failing 1`] = `
 Array [
   <nav
-    class="navbar navbar-dark bg-dark"
+    className="navbar navbar-dark bg-dark"
   >
     <a
-      class="navbar-brand"
+      className="navbar-brand"
       href="/dashboard"
     >
       Home
     </a>
     <a
-      class="navbar-brand"
+      className="navbar-brand"
       href="/login"
     >
       Logout
@@ -20,21 +20,23 @@ Array [
   </nav>,
   <br />,
   <table>
-    <tr>
-      <th>
-        Destination
-      </th>
-      <th>
-        Order Nickname
-      </th>
-      <th>
-        Status
-      </th>
-      <th>
-        Pickup Location
-      </th>
-    </tr>
-    loading......
+    <tbody>
+      <tr>
+        <th>
+          Destination
+        </th>
+        <th>
+          Order Nickname
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          Pickup Location
+        </th>
+      </tr>
+      loading......
+    </tbody>
   </table>,
 ]
 `;

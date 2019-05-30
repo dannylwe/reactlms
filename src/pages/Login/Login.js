@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./login.scss";
+import axios from "axios";
 
 class Login extends Component {
   state = {
@@ -20,23 +21,13 @@ class Login extends Component {
     const loginUrl =
       " https://challenge3andela.herokuapp.com/api/v1/auth/login";
 
-    fetch(loginUrl, {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json; charset=UTF-8"
-      },
-      body: JSON.stringify(loginDetails)
-    })
-      .then(res => res.json())
-      .then(resp => {
-        if (resp.message == "Logged in successfully. Welcome to sendIT") {
-          this.props.history.push("/dashboard");
-        } else if (resp.message == "Logged in as admin. Dashboard") {
-          this.props.history.push("/admin");
-        }
-      });
+    axios.post(loginUrl, loginDetails, { withCredentials: true }).then(resp => {
+      if (resp.data.message == "Logged in successfully. Welcome to sendIT") {
+        this.props.history.push("/dashboard");
+      } else if (resp.data.message == "Logged in as admin. Dashboard") {
+        this.props.history.push("/admin");
+      }
+    });
   };
 
   render() {
