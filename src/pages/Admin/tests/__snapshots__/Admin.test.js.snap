@@ -1,7 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Admin should render without failing 1`] = `
-<p>
-  Admin under construction
-</p>
+Array [
+  <nav
+    class="navbar navbar-dark bg-dark"
+  >
+    <a
+      class="navbar-brand"
+      href="/dashboard"
+    >
+      Home
+    </a>
+    <a
+      class="navbar-brand"
+      href="/login"
+    >
+      Logout
+    </a>
+  </nav>,
+  <br />,
+  <table>
+    <tr>
+      <th>
+        Destination
+      </th>
+      <th>
+        Order Nickname
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+        Pickup Location
+      </th>
+    </tr>
+    loading......
+  </table>,
+]
 `;
