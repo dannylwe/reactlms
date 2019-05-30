@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard should render without failing 1`] = `
+Array [
+  <h1>
+    user dashboard
+  </h1>,
+  <p>
+    under construction
+  </p>,
+]
+`;
