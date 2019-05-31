@@ -6,16 +6,24 @@ class Dashboard extends Component {
   state = {
     items: ""
   };
+  
   componentDidMount() {
-    axios
+    this.getParcels();
+  }
+
+  getParcels() {
+    return axios
       .get("https://challenge3andela.herokuapp.com/api/v1/parcels", {
         withCredentials: true
       })
       .then(res => {
-        this.setState({ items: res.data["item info"] });
+        this.mtd(res.data);
       });
   }
-  
+  mtd(data) {
+    this.setState({ items: data["item info"] });
+  }
+
   render() {
     const { items } = this.state;
 
@@ -32,24 +40,26 @@ class Dashboard extends Component {
         : "loading......";
     return (
       <>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="/dashboard">
+        <nav className="navbar navbar-dark bg-dark">
+          <a className="navbar-brand" href="/dashboard">
             Home
           </a>
-          <a class="navbar-brand" href="/login">
+          <a className="navbar-brand" href="/login">
             Logout
           </a>
         </nav>
 
         <br />
         <table>
-          <tr>
-            <th>Destination</th>
-            <th>Order Nickname</th>
-            <th>Status</th>
-            <th>Pickup Location</th>
-          </tr>
-          {itemValues}
+          <tbody>
+            <tr>
+              <th>Destination</th>
+              <th>Order Nickname</th>
+              <th>Status</th>
+              <th>Pickup Location</th>
+            </tr>
+            {itemValues}
+          </tbody>
         </table>
       </>
     );
