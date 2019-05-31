@@ -52,6 +52,7 @@ Array [
       </div>
       <button
         className="btn btn-primary"
+        id="loginButton"
         type="submit"
       >
         Login
