@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import "./login.scss";
-import axios from "axios";
+import { connect } from "react-redux";
+import { loginAuthentication } from "../../actions/loginActions";
 
-class Login extends Component {
+export class Login extends Component {
   state = {
     username: "",
     password: ""
@@ -16,18 +18,13 @@ class Login extends Component {
 
   onSubmit = e => {
     e.preventDefault();
+    const { history } = this.props;
     const { username, password } = this.state;
     const loginDetails = { username, password };
     const loginUrl =
       " https://challenge3andela.herokuapp.com/api/v1/auth/login";
 
-    axios.post(loginUrl, loginDetails, { withCredentials: true }).then(resp => {
-      if (resp.data.message == "Logged in successfully. Welcome to sendIT") {
-        this.props.history.push("/dashboard");
-      } else if (resp.data.message == "Logged in as admin. Dashboard") {
-        this.props.history.push("/admin");
-      }
-    });
+    this.props.loginAuthentication(loginUrl, loginDetails, history);
   };
 
   render() {
@@ -65,7 +62,7 @@ class Login extends Component {
               </div>
             </div>
             {/* submit button */}
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary" id="loginButton">
               Login
             </button>
           </form>
@@ -75,4 +72,9 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(
+  connect(
+    null,
+    { loginAuthentication }
+  )(Login)
+);
