@@ -4,11 +4,11 @@ class NavBar extends Component {
   render() {
     return (
       <>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="/dashboard">
+        <nav className="navbar navbar-dark bg-dark">
+          <a className="navbar-brand" href="/dashboard">
             Home
           </a>
-          <a class="navbar-brand" href="/login">
+          <a className="navbar-brand" href="/login">
             Logout
           </a>
         </nav>
