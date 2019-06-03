@@ -4,6 +4,7 @@ import Error from "../Custom404/Error";
 import Login from "../../pages/Login/Login";
 import Dashboard from "../../pages/Dashboard/Dashboard";
 import Admin from "../../pages/Admin/Admin";
+import Signup from "../../pages/Signup/Signup";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/admin" component={Admin} />
+          <Route path="/signup" component={Signup} />
           <Route component={Error} />
         </Switch>
       </Router>

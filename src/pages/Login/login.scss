@@ -1,4 +1,7 @@
-.form-login{
+$color-blue: rgb(56, 54, 214);
+a {color: $color-blue}
+
+.form-login {
     display: flex;
 }
 .form-login {
@@ -8,7 +11,7 @@
 }
 
 .password-input {
-    padding-top: 25px;
+    padding-top: 1.5625rem;
 }
 
 .login-title {
@@ -18,5 +21,13 @@
 .login-title {
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 12.5rem;
+}
+
+.login-btn {
+    width: 100%;
+}
+
+.signup-login {
+    padding: 0.3125rem;
 }

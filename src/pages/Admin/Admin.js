@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "../Dashboard/Dashboard.css";
+import NavBar from "../../components/NavBar/NavBar";
 
 class Admin extends Component {
   state = {
@@ -32,15 +33,7 @@ class Admin extends Component {
         : "loading......";
     return (
       <>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="/dashboard">
-            Home
-          </a>
-          <a class="navbar-brand" href="/login">
-            Logout
-          </a>
-        </nav>
-
+        <NavBar />
         <br />
         <h2>Welcome Admin</h2>
         <table>

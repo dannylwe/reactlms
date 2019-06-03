@@ -7,8 +7,17 @@ To use repo locally: `git clone https://github.com/dannylwe/reactlms` `npm insta
 # Heroku
 `https://lms-authors-haben.herokuapp.com/`
 
+# Features
+- User can login
+- Admin can login
+- A user can signup
+- Custom error page for page 404
+- User can see he's parcels
+- Admin can see all parcels without status "cancelled"
+
 # Admin Login
 `username: admin` `password: abcdefgh`
 
 # User Login
 `username: danny1` `password: abcdefgh`
+

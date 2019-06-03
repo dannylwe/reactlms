@@ -32,7 +32,7 @@ export class Login extends Component {
       <>
         {/* welcome message */}
         <div className="login-title">
-          <h1>Welcome to SendIt</h1>
+          <a href="/login"><h1>Welcome to SendIt</h1></a>
         </div>
         <div className="form-login">
           <form onSubmit={this.onSubmit}>
@@ -61,8 +61,18 @@ export class Login extends Component {
                 />
               </div>
             </div>
+            <div class="signup-login">
+              <span>
+                <text>Not a member, </text>
+                <a href="/signup">Signup</a>
+              </span>
+            </div>
             {/* submit button */}
-            <button type="submit" className="btn btn-primary" id="loginButton">
+            <button
+              type="submit"
+              className="btn btn-primary login-btn"
+              id="loginButton"
+            >
               Login
             </button>
           </form>

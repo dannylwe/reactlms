@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should render without failing 1`] = `
+<nav
+  class="navbar navbar-dark bg-dark"
+>
+  <a
+    class="navbar-brand"
+    href="/dashboard"
+  >
+    Home
+  </a>
+  <a
+    class="navbar-brand"
+    href="/login"
+  >
+    Logout
+  </a>
+</nav>
+`;
