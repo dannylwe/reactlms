@@ -10,9 +10,11 @@ export const loginAuthentication = (
     // console.log("test from response ",resp);
     if (resp.data.message == "Logged in successfully. Welcome to sendIT") {
       dispatch({ type: FINISH_LOGIN, payload: true });
+      localStorage.setItem('userAuthenticated', true);
       history.push("/dashboard");
     } else if (resp.data.message == "Logged in as admin. Dashboard") {
       dispatch({ type: FINISH_LOGIN, payload: true });
+      localStorage.setItem('userAuthenticated', true);
       history.push("/admin");
     }
   });

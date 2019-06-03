@@ -60,11 +60,15 @@ export class Login extends Component {
                   onChange={e => this.handleChange(e)}
                 />
               </div>
+              {/* submit button */}
+              <button
+                type="submit"
+                className="btn btn-primary"
+                id="loginButton"
+              >
+                Login
+              </button>
             </div>
-            {/* submit button */}
-            <button type="submit" className="btn btn-primary" id="loginButton">
-              Login
-            </button>
           </form>
         </div>
       </>

@@ -4,6 +4,13 @@
 
 To use repo locally: `git clone https://github.com/dannylwe/reactlms` `npm install` `npm run start:dev`
 
+# Features
+ - user can login
+ - admin can login
+ - user can see all he's orders
+ - admin can see all orders that do not have status "cancelled"
+ - Have to be logged in to view user or admin dashboard
+
 # Heroku
 `https://lms-authors-haben.herokuapp.com/`
 
