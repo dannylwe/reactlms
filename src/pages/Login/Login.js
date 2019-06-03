@@ -32,7 +32,9 @@ export class Login extends Component {
       <>
         {/* welcome message */}
         <div className="login-title">
-          <a href="/login"><h1>Welcome to SendIt</h1></a>
+          <a href="/login">
+            <h1>Welcome to SendIt</h1>
+          </a>
         </div>
         <div className="form-login">
           <form onSubmit={this.onSubmit}>

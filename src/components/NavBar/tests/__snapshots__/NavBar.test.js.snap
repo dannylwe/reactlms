@@ -2,16 +2,16 @@
 
 exports[`NavBar should render without failing 1`] = `
 <nav
-  class="navbar navbar-dark bg-dark"
+  className="navbar navbar-dark bg-dark"
 >
   <a
-    class="navbar-brand"
+    className="navbar-brand"
     href="/dashboard"
   >
     Home
   </a>
   <a
-    class="navbar-brand"
+    className="navbar-brand"
     href="/login"
   >
     Logout
