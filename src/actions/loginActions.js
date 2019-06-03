@@ -7,7 +7,6 @@ export const loginAuthentication = (
   history
 ) => dispatch =>
   axios.post(loginUrl, loginDetails, { withCredentials: true }).then(resp => {
-    // console.log("test from response ",resp);
     if (resp.data.message == "Logged in successfully. Welcome to sendIT") {
       dispatch({ type: FINISH_LOGIN, payload: true });
       history.push("/dashboard");

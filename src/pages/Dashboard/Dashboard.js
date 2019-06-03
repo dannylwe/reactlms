@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Dashboard.css";
+import NavBar from "../../components/NavBar/NavBar";
 
 class Dashboard extends Component {
   state = {
     items: ""
   };
-  
+
   componentDidMount() {
     this.getParcels();
   }
@@ -40,15 +41,7 @@ class Dashboard extends Component {
         : "loading......";
     return (
       <>
-        <nav className="navbar navbar-dark bg-dark">
-          <a className="navbar-brand" href="/dashboard">
-            Home
-          </a>
-          <a className="navbar-brand" href="/login">
-            Logout
-          </a>
-        </nav>
-
+        <NavBar />
         <br />
         <table>
           <tbody>

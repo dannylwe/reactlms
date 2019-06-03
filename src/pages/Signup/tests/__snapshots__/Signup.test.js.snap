@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`signup should render 1`] = `
+Array [
+  <div
+    className="signup-title"
+  >
+    <a
+      href="/login"
+    >
+      <h2>
+        Signup To sendIT
+      </h2>
+    </a>
+  </div>,
+  <div
+    className="signup-form"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="signup-forms input-forms"
+      >
+        <div
+          className="email-input"
+        >
+          <label>
+            Email
+          </label>
+          <input
+            aria-describedby="emailHelp"
+            className="form-control"
+            id="emailInput"
+            name="email"
+            onChange={[Function]}
+            placeholder="email"
+            type="email"
+          />
+        </div>
+        <div
+          className="username-input"
+        >
+          <label>
+            Username
+          </label>
+          <input
+            aria-describedby="usernameHelp"
+            className="form-control"
+            id="usernameInput"
+            name="username"
+            onChange={[Function]}
+            placeholder="Username"
+            type="text"
+          />
+        </div>
+        <div
+          className="phone-input"
+        >
+          <label>
+            Hand Phone
+          </label>
+          <input
+            aria-describedby="handphoneHelp"
+            className="form-control"
+            id="habdphoneInput"
+            name="handphone"
+            onChange={[Function]}
+            placeholder="e.g 0773504973"
+            type="text"
+          />
+        </div>
+        <div
+          className="password-input"
+        >
+          <label>
+            Password
+          </label>
+          <input
+            aria-describedby="passwordHelp"
+            className="form-control"
+            id="passwordlInput"
+            name="password"
+            onChange={[Function]}
+            placeholder="Enter Password"
+            type="password"
+          />
+        </div>
+        <div
+          className="confirm-input"
+        >
+          <label>
+             Confirm Password
+          </label>
+          <input
+            aria-describedby="passwordHelp"
+            className="form-control"
+            id="confirmPasswordlInput"
+            name="confirmPassword"
+            onChange={[Function]}
+            placeholder="Confirm Password"
+            type="password"
+          />
+        </div>
+      </div>
+      <div
+        className="submit-button"
+      >
+        <button
+          className="btn btn-primary submit-btn"
+          id="signupButton"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>,
+]
+`;

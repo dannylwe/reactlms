@@ -5,9 +5,13 @@ Array [
   <div
     className="login-title"
   >
-    <h1>
-      Welcome to SendIt
-    </h1>
+    <a
+      href="/login"
+    >
+      <h1>
+        Welcome to SendIt
+      </h1>
+    </a>
   </div>,
   <div
     className="form-login"
@@ -50,8 +54,22 @@ Array [
           />
         </div>
       </div>
+      <div
+        class="signup-login"
+      >
+        <span>
+          <text>
+            Not a member, 
+          </text>
+          <a
+            href="/signup"
+          >
+            Signup
+          </a>
+        </span>
+      </div>
       <button
-        className="btn btn-primary"
+        className="btn btn-primary login-btn"
         id="loginButton"
         type="submit"
       >
