@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/dannylwe/reactlms.svg?branch=develop)](https://travis-ci.org/dannylwe/reactlms) [![Coverage Status](https://coveralls.io/repos/github/dannylwe/reactlms/badge.svg?branch=develop)](https://coveralls.io/github/dannylwe/reactlms?branch=develop) [![Maintainability](https://api.codeclimate.com/v1/badges/ab444b11fd6526033d22/maintainability)](https://codeclimate.com/github/dannylwe/reactlms/maintainability)
 
+# Description
+SendIT is a courier service that helps users deliver parcels.
+
 # Usage
 
 To use repo locally: `git clone https://github.com/dannylwe/reactlms` `npm install` `npm run start:dev`
