@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { signupAuthentication } from "../../actions/signupActions";
+import Spinner from "../../components/LoadingSpinner/Spinner";
 import "./signup.scss";
+import { SIGN_UP } from "../../actions/types";
 
 export class Signup extends Component {
   state = {
@@ -10,7 +12,8 @@ export class Signup extends Component {
     password: "",
     confirmPassword: "",
     username: "",
-    handphone: ""
+    handphone: "",
+    isLoading: false
   };
 
   handleChange = event => {
@@ -21,6 +24,7 @@ export class Signup extends Component {
   passwordCheck = (password, confirmPassword) => {
     if (password !== confirmPassword) {
       alert("passwords not equal");
+      this.setState({ isLoading: false });
       throw new Error("Passwords not Equal!!");
     }
   };
@@ -31,6 +35,7 @@ export class Signup extends Component {
     const Handphone = this.state.handphone;
     const handphone = parseInt(Handphone);
     this.passwordCheck(password, confirmPassword);
+    this.setState({ isLoading: true });
     const loginDetails = { email, password, handphone, username };
     const loginUrl = "https://challenge3andela.herokuapp.com/api/v1/auth/user";
     this.props.signupAuthentication(loginUrl, loginDetails, history);
@@ -39,7 +44,9 @@ export class Signup extends Component {
     return (
       <>
         <div className="signup-title">
-          <a href="/login"><h2>Signup To sendIT</h2></a>
+          <a href="/login">
+            <h2>Signup To sendIT</h2>
+          </a>
         </div>
         <div className="signup-form">
           <form onSubmit={this.onSubmit}>
@@ -111,7 +118,7 @@ export class Signup extends Component {
                 className="btn btn-primary submit-btn"
                 id="signupButton"
               >
-                Sign Up
+                Sign Up {this.state.isLoading ? <Spinner /> : ""}
               </button>
             </div>
           </form>
