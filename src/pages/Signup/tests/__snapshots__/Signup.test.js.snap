@@ -111,7 +111,8 @@ Array [
           id="signupButton"
           type="submit"
         >
-          Sign Up
+          Sign Up 
+          
         </button>
       </div>
     </form>
