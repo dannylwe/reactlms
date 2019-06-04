@@ -13,6 +13,12 @@ Array [
     </a>
     <a
       className="navbar-brand"
+      href="/create"
+    >
+      Create Parcel
+    </a>
+    <a
+      className="navbar-brand"
       href="/login"
       onClick={[Function]}
     >

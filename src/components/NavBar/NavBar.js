@@ -8,6 +8,9 @@ class NavBar extends Component {
           <a className="navbar-brand" href="/dashboard">
             Home
           </a>
+          <a className="navbar-brand" href="/create">
+            Create Parcel
+          </a>
           <a
             className="navbar-brand"
             href="/login"
