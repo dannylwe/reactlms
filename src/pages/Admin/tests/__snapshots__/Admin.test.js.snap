@@ -14,6 +14,7 @@ Array [
     <a
       className="navbar-brand"
       href="/login"
+      onClick={[Function]}
     >
       Logout
     </a>

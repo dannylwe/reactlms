@@ -8,7 +8,13 @@ class NavBar extends Component {
           <a className="navbar-brand" href="/dashboard">
             Home
           </a>
-          <a className="navbar-brand" href="/login">
+          <a
+            className="navbar-brand"
+            href="/login"
+            onClick={() => {
+              localStorage.clear();
+            }}
+          >
             Logout
           </a>
         </nav>

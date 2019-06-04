@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { signupAuthentication } from "../../actions/signupActions";
 import Spinner from "../../components/LoadingSpinner/Spinner";
 import "./signup.scss";
-import { SIGN_UP } from "../../actions/types";
 
 export class Signup extends Component {
   state = {
@@ -44,9 +43,7 @@ export class Signup extends Component {
     return (
       <>
         <div className="signup-title">
-          <a href="/login">
-            <h2>Signup To sendIT</h2>
-          </a>
+          <Link to="/login"><h1>Welcome to SendIT</h1></Link>
         </div>
         <div className="signup-form">
           <form onSubmit={this.onSubmit}>

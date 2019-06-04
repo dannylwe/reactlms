@@ -7,10 +7,11 @@ Array [
   >
     <a
       href="/login"
+      onClick={[Function]}
     >
-      <h2>
-        Signup To sendIT
-      </h2>
+      <h1>
+        Welcome to SendIT
+      </h1>
     </a>
   </div>,
   <div

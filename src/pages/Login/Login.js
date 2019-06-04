@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import "./login.scss";
 import { connect } from "react-redux";
 import { loginAuthentication } from "../../actions/loginActions";
@@ -32,9 +32,9 @@ export class Login extends Component {
       <>
         {/* welcome message */}
         <div className="login-title">
-          <a href="/login">
-            <h1>Welcome to SendIt</h1>
-          </a>
+          <Link to="/login">
+            <h1>Welcome to SendIT</h1>
+          </Link>
         </div>
         <div className="form-login">
           <form onSubmit={this.onSubmit}>
@@ -66,7 +66,7 @@ export class Login extends Component {
             <div class="signup-login">
               <span>
                 <text>Not a member, </text>
-                <a href="/signup">Signup</a>
+                <Link to="/signup">Sign up</Link>
               </span>
             </div>
             {/* submit button */}

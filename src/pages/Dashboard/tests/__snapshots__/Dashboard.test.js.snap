@@ -14,6 +14,7 @@ Array [
     <a
       className="navbar-brand"
       href="/login"
+      onClick={[Function]}
     >
       Logout
     </a>
@@ -35,7 +36,7 @@ Array [
           Pickup Location
         </th>
       </tr>
-      loading......
+      You do not have any posts
     </tbody>
   </table>,
 ]
