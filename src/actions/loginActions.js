@@ -9,9 +9,11 @@ export const loginAuthentication = (
   axios.post(loginUrl, loginDetails, { withCredentials: true }).then(resp => {
     if (resp.data.message == "Logged in successfully. Welcome to sendIT") {
       dispatch({ type: FINISH_LOGIN, payload: true });
-      history.push("/dashboard");
+      localStorage.setItem("userAuthenticated", true);
+      window.location.href = "/dashboard";
     } else if (resp.data.message == "Logged in as admin. Dashboard") {
       dispatch({ type: FINISH_LOGIN, payload: true });
-      history.push("/admin");
+      localStorage.setItem("userAuthenticated", true);
+      window.location.href = "/admin";
     }
   });

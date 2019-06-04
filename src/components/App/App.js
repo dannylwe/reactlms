@@ -5,17 +5,21 @@ import Login from "../../pages/Login/Login";
 import Dashboard from "../../pages/Dashboard/Dashboard";
 import Admin from "../../pages/Admin/Admin";
 import Signup from "../../pages/Signup/Signup";
+import {
+  PublicRoute,
+  AuthenticatedRoute
+} from "../ProtectedRoutes/ProtectedRoutes";
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/login" component={Login} />
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/admin" component={Admin} />
-          <Route path="/signup" component={Signup} />
+          <PublicRoute exact path="/" component={Login} />
+          <PublicRoute exact path="/login" component={Login} />
+          <AuthenticatedRoute path="/dashboard" component={Dashboard} />
+          <AuthenticatedRoute path="/admin" component={Admin} />
+          <PublicRoute path="/signup" component={Signup} />
           <Route component={Error} />
         </Switch>
       </Router>

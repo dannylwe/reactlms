@@ -13,6 +13,7 @@ exports[`NavBar should render without failing 1`] = `
   <a
     className="navbar-brand"
     href="/login"
+    onClick={[Function]}
   >
     Logout
   </a>
