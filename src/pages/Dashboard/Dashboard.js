@@ -38,7 +38,7 @@ class Dashboard extends Component {
               <th>{item.pickup}</th>
             </tr>
           ))
-        : "loading......";
+        : "You do not have any posts";
     return (
       <>
         <NavBar />
