@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateParcel should render without failing 1`] = `
+Array [
+  <nav
+    className="navbar navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+      href="/dashboard"
+    >
+      Home
+    </a>
+    <a
+      className="navbar-brand"
+      href="/create"
+    >
+      Create Parcel
+    </a>
+    <a
+      className="navbar-brand"
+      href="/login"
+      onClick={[Function]}
+    >
+      Logout
+    </a>
+  </nav>,
+  <div
+    className="create-title"
+  >
+    <h4>
+      <p>
+        Create Parcel
+      </p>
+    </h4>
+  </div>,
+  <div
+    className="form-create"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div>
+        <label>
+          Pickup location
+        </label>
+        <input
+          aria-describedby="pickupHelp"
+          className="form-control"
+          id="pickupInput"
+          name="pickup"
+          onChange={[Function]}
+          placeholder="Enter Pickup Location"
+          type="text"
+        />
+      </div>
+      <div>
+        <label>
+          Destination
+        </label>
+        <input
+          aria-describedby="destinationHelp"
+          className="form-control"
+          id="destinationInput"
+          name="destination"
+          onChange={[Function]}
+          placeholder="Destination"
+          type="text"
+        />
+      </div>
+      <div>
+        <label>
+          Nickname
+        </label>
+        <input
+          aria-describedby="nicknameHelp"
+          className="form-control"
+          id="nicknameInput"
+          name="nickname"
+          onChange={[Function]}
+          placeholder="Pichachu"
+          type="text"
+        />
+      </div>
+      <div>
+        <label>
+          Weight
+        </label>
+        <input
+          aria-describedby="weightHelp"
+          className="form-control"
+          id="weightInput"
+          name="weight"
+          onChange={[Function]}
+          placeholder="weight in kg < 10"
+          type="number"
+        />
+      </div>
+      <div>
+        <label>
+          Height
+        </label>
+        <input
+          aria-describedby="heightHelp"
+          className="form-control"
+          id="heightInput"
+          name="height"
+          onChange={[Function]}
+          placeholder="Height in kg < 10"
+          type="number"
+        />
+      </div>
+      <div
+        className="submit-button"
+      >
+        <button
+          className="btn btn-primary submit-btn"
+          id="parcelButton"
+          type="submit"
+        >
+          Create Parcel
+        </button>
+      </div>
+    </form>
+  </div>,
+]
+`;

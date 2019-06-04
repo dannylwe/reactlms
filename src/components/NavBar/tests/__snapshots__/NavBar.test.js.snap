@@ -12,6 +12,12 @@ exports[`NavBar should render without failing 1`] = `
   </a>
   <a
     className="navbar-brand"
+    href="/create"
+  >
+    Create Parcel
+  </a>
+  <a
+    className="navbar-brand"
     href="/login"
     onClick={[Function]}
   >

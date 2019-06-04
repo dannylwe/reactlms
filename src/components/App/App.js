@@ -5,6 +5,7 @@ import Login from "../../pages/Login/Login";
 import Dashboard from "../../pages/Dashboard/Dashboard";
 import Admin from "../../pages/Admin/Admin";
 import Signup from "../../pages/Signup/Signup";
+import CreateParcel from "../../pages/CreateParcel/CreateParcel";
 import {
   PublicRoute,
   AuthenticatedRoute
@@ -20,6 +21,7 @@ class App extends Component {
           <AuthenticatedRoute path="/dashboard" component={Dashboard} />
           <AuthenticatedRoute path="/admin" component={Admin} />
           <PublicRoute path="/signup" component={Signup} />
+          <AuthenticatedRoute path="/create" component={CreateParcel} />
           <Route component={Error} />
         </Switch>
       </Router>
