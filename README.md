@@ -15,8 +15,10 @@ To use repo locally: `git clone https://github.com/dannylwe/reactlms` `npm insta
 - Admin can login
 - A user can signup
 - Custom error page for page 404
+- Route protection
 - User can see he's parcels
 - Admin can see all parcels without status "cancelled"
+- A user can create a parcel for delivery
 
 # Admin Login
 `username: admin` `password: abcdefgh`
