@@ -3,6 +3,12 @@
 # Description
 SendIT is a courier service that helps users deliver parcels.
 
+# Tools
+- React/Redux
+- Babel
+- ES6
+- Webpack
+
 # Usage
 
 To use repo locally: `git clone https://github.com/dannylwe/reactlms` `npm install` `npm run start:dev`
